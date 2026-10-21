@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Go Gaming</title>
+
+```
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: #10101a;
+        color: white;
+    }
+
+    header {
+        background: #181827;
+        padding: 20px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 26px;
+        font-weight: bold;
+        color: #00ff99;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+    }
+
+    nav a:hover {
+        color: #00ff99;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 90px 20px;
+        background: linear-gradient(135deg, #201044, #071e2d);
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+        color: #00ff99;
+    }
+
+    .hero p {
+        font-size: 18px;
+        color: #cccccc;
+        margin-bottom: 30px;
+    }
+
+    .button {
+        display: inline-block;
+        background: #00ff99;
+        color: #10101a;
+        padding: 14px 28px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .button:hover {
+        background: white;
+    }
+
+    .games {
+        padding: 50px 8%;
+    }
+
+    .games h2 {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 35px;
+    }
+
+    .game-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 25px;
+    }
+
+    .game-card {
+        background: #1c1c2c;
+        border-radius: 12px;
+        overflow: hidden;
+        text-align: center;
+        padding-bottom: 25px;
+        transition: transform 0.3s;
+    }
+
+    .game-card:hover {
+        transform: translateY(-8px);
+    }
+
+    .game-image {
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 65px;
+    }
+
+    .football {
+        background: linear-gradient(135deg, #006400, #00aa55);
+    }
+
+    .action {
+        background: linear-gradient(135deg, #8b0000, #ff4500);
+    }
+
+    .racing {
+        background: linear-gradient(135deg, #00008b, #4169e1);
+    }
+
+    .adventure {
+        background: linear-gradient(135deg, #4b0082, #9932cc);
+    }
+
+    .game-card h3 {
+        margin: 20px 0 10px;
+    }
+
+    .game-card p {
+        color: #cccccc;
+        padding: 0 15px;
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+
+    .play-button {
+        display: inline-block;
+        background: #00ff99;
+        color: #10101a;
+        padding: 10px 22px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .about {
+        background: #181827;
+        text-align: center;
+        padding: 55px 8%;
+    }
+
+    .about h2 {
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    .about p {
+        max-width: 700px;
+        margin: auto;
+        color: #cccccc;
+        line-height: 1.8;
+    }
+
+    footer {
+        text-align: center;
+        padding: 25px;
+        color: #aaaaaa;
+        font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+        header {
+            justify-content: center;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 8px;
+            font-size: 14px;
+        }
+
+        .hero h1 {
+            font-size: 34px;
+        }
+
+        .hero {
+            padding: 65px 15px;
+        }
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+```
+<header>
+    <div class="logo">🎮 Let's Go Gaming</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#games">Games</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>Welcome to <span>Let's Go Gaming!</span></h1>
+
+    <p>Your next gaming adventure starts here.</p>
+
+    <a href="#games" class="button">Explore Games</a>
+</section>
+
+<section class="games" id="games">
+    <h2>Choose Your Game</h2>
+
+    <div class="game-container">
+
+        <div class="game-card">
+            <div class="game-image football">⚽</div>
+            <h3>Football Games</h3>
+            <p>Enjoy football games and test your skills on the pitch.</p>
+            <a href="https://www.crazygames.com/t/football"
+               target="_blank" rel="noopener noreferrer"
+               class="play-button">Play Now</a>
+        </div>
+
+        <div class="game-card">
+            <div class="game-image action">🔥</div>
+            <h3>Action Games</h3>
+            <p>Experience exciting challenges and action-packed gameplay.</p>
+            <a href="https://www.crazygames.com/t/action"
+               target="_blank" rel="noopener noreferrer"
+               class="play-button">Play Now</a>
+        </div>
+
+        <div class="game-card">
+            <div class="game-image racing">🏎️</div>
+            <h3>Racing Games</h3>
+            <p>Race against the competition and chase victory.</p>
+            <a href="https://www.crazygames.com/t/racing"
+               target="_blank" rel="noopener noreferrer"
+               class="play-button">Play Now</a>
+        </div>
+
+        <div class="game-card">
+            <div class="game-image adventure">🗺️</div>
+            <h3>Adventure Games</h3>
+            <p>Explore new worlds and discover exciting adventures.</p>
+            <a href="https://www.crazygames.com/t/adventure"
+               target="_blank" rel="noopener noreferrer"
+               class="play-button">Play Now</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2>About Let's Go Gaming</h2>
+
+    <p>
+        Let's Go Gaming is a place for gamers to discover
+        exciting online games across different categories.
+        Whether you love football, racing, action, or adventure,
+        there is something here for you.
+        Pick your favorite category and start playing!
+    </p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Let's Go Gaming. All rights reserved.</p>
+</footer>
+```
+
+</body>
+</html>
