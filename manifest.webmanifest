@@ -1,0 +1,15 @@
+{
+  "id": "./",
+  "name": "LET'S GO GAMING",
+  "short_name": "Let's Go Gaming",
+  "description": "Play free mini games, beat your best scores and challenge yourself.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "background_color": "#090d18",
+  "theme_color": "#090d18",
+  "orientation": "portrait",
+  "categories": ["games", "entertainment"],
+  "icons": [{"src":"./icons/app-icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
